@@ -18,9 +18,10 @@
 
 body{
   background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-color: var(--dark-cyan);
   background-position: right 50vw bottom 20vh, 45vw 60vh;
   background-repeat: no-repeat;
-  background-color: var(--dark-cyan);
+  // max-width: 1440px;
 }
 
 .container{
@@ -31,10 +32,10 @@ body{
 }
 
 .card {
-  box-shadow: 0 0 5px 0 var(--dark-blue);
   text-align: center;
   background: var(--white);
   border-radius: 15px;
+  // box-shadow: 0 0 10px 0 var(--grayish-blue);
 }
 
 .id-image {
@@ -85,6 +86,14 @@ p {
 
 }
 
+@media screen and (max-width: 379px) {
+  body {
+  background-position: right 40vw bottom 20vh, 40vw 40vh;
+  }
+  .card {
+    margin: 0 20px;
+  }
+}
 
 
 
